@@ -32,10 +32,6 @@ class ExMain extends React.Component{
 class LinkBtn extends React.Component {
 	
 	render() {
-		var divStyle = {
-		  color: "white",
-		  fontsize:15,
-		};	
 		return(
 			<div style={{"width":100+"px",
 					"height":100+"px",
