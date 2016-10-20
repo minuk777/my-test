@@ -1,0 +1,24 @@
+.wrap_box{
+	border:1px solid #555555;
+}
+.title_wrap{
+	border:1px solid #555555;
+	padding: 5px;	
+}
+.content_wrap{
+	border:1px solid #555555;
+	padding: 5px;	
+}
+.title_content{
+	border:1px solid #555555;
+}
+.content_cont{
+	border:1px solid #555555;
+}
+.red{
+	color:red;
+}
+
+.blue{
+	color: blue;
+}
