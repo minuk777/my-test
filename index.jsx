@@ -8,12 +8,7 @@ import store from "./store"
 
 import { Router, Route, BrowserHistory } from 'react-router'
 
-import DropzoneDemo from "./dropTest"
-
 const rootElement = document.getElementById('app');
 ReactDOM.render(<Provider store={store}>
-			<Router history={BrowserHistory}>
-			    <Route path='/' component={DropzoneDemo}>
-			    </Route>
-			  </Router>
+			    <App />
 		    </Provider>, rootElement);

@@ -1,7 +1,8 @@
 import React from 'react';
 import style from './styles.css';
 import { connect } from "react-redux"
-
+import Apples from './Apples';
+import DropzoneDemo from "./dropTest"
 import { fetchUser, setUserName } from "./userActions"
 
 @connect((store) => {
@@ -20,6 +21,7 @@ class App extends React.Component{
 		console.log(user);
 		return(
 			<div>
+				<Apples />	
 				<h1>{user.name}</h1>
 				<div className={style.wrap_box}>
 					<div className={style.title_wrap}>
@@ -29,6 +31,8 @@ class App extends React.Component{
 						<div className={style.content_cont}>Content{this.props.name}</div>
 					</div>	
 				</div>
+				
+			    	<DropzoneDemo />
 			</div>
 		);
 	}
