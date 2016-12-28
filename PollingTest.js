@@ -14,6 +14,8 @@ class PollingTest extends React.Component {
 		this.state = {
 			count:0,
 			name:"first",
+			ball:"./loading_ball1.gif",
+			ball2:"./loading_ball2.gif"
 		};
 	}
 
@@ -24,7 +26,10 @@ class PollingTest extends React.Component {
 
 	render() {
 		return(
-			<div>{this.state.count}:{this.state.name}<ReactInterval timeout={3000} enabled={true} callback={this.pollThis.bind(this)} /></div>
+			<div style={{backgroundColor:"yellow"}}>{this.state.count}:{this.state.name}
+			<img src={this.state.ball} /><img src={this.state.ball2} />
+			<ReactInterval timeout={3000} enabled={true} callback={this.pollThis.bind(this)} />
+			</div>
 		);
 	}
 }
